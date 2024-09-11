@@ -1,4 +1,4 @@
-const API_URL = 'https://localhost:3000';
+const USER_API_URL = 'http://localhost:3000/user';
 
 // Switching between login and register
 document.getElementById('showRegister').addEventListener('click', () => {
@@ -13,9 +13,9 @@ document.getElementById('showLogin').addEventListener('click', () => {
 
 // Register User
 document.getElementById('registerBtn').addEventListener('click', () => {
-    const username = document.getElementById('username').value;
+    const username = document.getElementById('registerUsername').value;
     const email = document.getElementById('email').value;
-    const password = document.getElementById('password').value;
+    const password = document.getElementById('registerPassword').value;
 
     const payload = {
         username,
@@ -44,15 +44,15 @@ document.getElementById('registerBtn').addEventListener('click', () => {
 
 // Login User
 document.getElementById('loginBtn').addEventListener('click', () => {
-    const email = document.getElementById('email').value;
-    const password = document.getElementById('password').value;
+    const email = document.getElementById('loginEmail').value;
+    const password = document.getElementById('loginPassword').value;
 
     const payload = {
         email,
         password
     };
     
-    fetch(`${API_URL}/user/login`, {
+    fetch(`${USER_API_URL}/login`, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -70,6 +70,7 @@ document.getElementById('loginBtn').addEventListener('click', () => {
         }
     })
     .catch(error => {
+        console.log(error);
         console.error('Error:', error);
         alert('Error logging in');
     });
