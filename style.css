@@ -14,9 +14,9 @@ body{
     border: none;
     border-radius: 15px;
     width: 30vw;
-    height: 70vh;
-    margin-top: 120px;
-    /* margin-left: 35%; */
+    height: 80vh;
+    margin-top: 100px;
+    margin-left: 35%;
 }
 
 header{
@@ -58,6 +58,47 @@ input, textarea, select {
     margin-bottom: 25px;
     width: 350px;
   }
+main a .txt2{
+    text-align: right;
+    color: #ca5d18;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 20px;
+}
+
+main .btn{
+    background-color: #c4c3bf;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    width: 350px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+main .text3{
+    color: #191818;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+main span{
+    color: #0560f2c4;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+footer p{
+    text-align: center;
+    /* margin-top: 30px; */
+    font-size: 10px;
+    font-weight: 500;
+}
+
 
 .social {
     display: flex;
@@ -69,5 +110,5 @@ input, textarea, select {
 .social img{
     width: 50px;
     height: 50px;
-    border-radius: 50%;
+    /* border-radius: 50%; */
 }
