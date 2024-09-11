@@ -14,16 +14,19 @@ body{
     border: none;
     border-radius: 15px;
     width: 30vw;
-    height: 80vh;
+    height: fit-content;
     margin-top: 100px;
     margin-left: 35%;
+    padding-left: 35px;
 }
+
 
 header{
     padding-top: 45px;
     text-align: center;
     line-height: 30px;
 }
+
 header .h2{
     text-transform: uppercase;
     font-weight: bold;
@@ -34,48 +37,6 @@ header .text1{
     text-transform: uppercase;
     font-weight: bold;
     font-size: 25px;
-}
-
-main{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 35px;
-}
-
-label {
-    color: #191818;
-    font-size: 20px;
-    font-weight: bold;
-  }
-
-input, textarea, select {
-    background-color: #fff;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    padding: 10px;
-    margin-bottom: 25px;
-    width: 350px;
-  }
-main a .txt2{
-    text-align: right;
-    color: #ca5d18;
-    font-size: 15px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-bottom: 20px;
-}
-
-main .btn{
-    background-color: #c4c3bf;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    padding: 10px;
-    width: 350px;
-    font-size: 20px;
-    font-weight: bold;
-    cursor: pointer;
 }
 
 main .text3{
@@ -92,6 +53,9 @@ main span{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+footer{
+    margin-top: 70px;
+}
 footer p{
     text-align: center;
     /* margin-top: 30px; */
