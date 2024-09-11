@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>myto-do</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
 </head>
 <body>
     <!-- Login Page -->
@@ -14,30 +16,24 @@
             <p class="text1">LOGIN</p>
         </header>
         <main>
-            <div>
-                <form>
-                    <label class="LB1">Email</label>
-                    <br>
-                    <input 
-                        type="email" id="mail" name="email" placeholder="Enter your Email" required
-                    />
-                    <br>
-                    <label class="LB2">Password</label>
-                    <br>
-                    <input
-                        type="password" id="password" name="password" placeholder="Password" required
-                    />
-                </form>
-                <a href="">
-                    <p class="txt2">Forgot Password?</p>
-                </a>                
-                <button id="loginBtn" class="btn">Log In</button>
-            </div>
-            
-            <p class="text3">
-                Don't have an accout?
-                <a href="signup.html">Sign Up</a>
-            </p>
+
+            <!-- Registration Form -->
+  <div id="registerPage" class="hidden max-w-md bg-white p-6 rounded-lg shadow-lg">
+    <h2 class="text-2xl font-bold mb-4 text-center">Register</h2>
+    <input type="text" id="registerUsername" placeholder="Username" class="w-full mb-3 p-2 border rounded">
+    <input type="password" id="registerPassword" placeholder="Password" class="w-full mb-3 p-2 border rounded">
+    <button id="registerBtn" class="w-full bg-blue-500 text-white p-2 rounded">Register</button>
+    <p class="mt-4 text-center">Already have an account? <a href="#" class="text-blue-700" id="showLogin">Login</a></p>
+  </div>
+
+  <!-- Login Form -->
+  <div id="loginPage" class="max-w-md bg-white p-6 rounded-lg shadow-lg">
+    <h2 class="text-2xl font-bold mb-4 text-center">Login</h2>
+    <input type="text" id="loginUsername" placeholder="Username" class="w-full mb-3 p-2 border rounded">
+    <input type="password" id="loginPassword" placeholder="Password" class="w-full mb-3 p-2 border rounded">
+    <button id="loginBtn" class="w-full bg-green-500 text-white p-2 rounded">Login</button>
+    <p class="mt-4 text-center">Don't have an account? <a href="#" class="text-green-700" id="showRegister">Register</a></p>
+  </div>
         </main>
 
         <footer>
